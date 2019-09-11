@@ -17,7 +17,7 @@ namespace Video_Game_Store_COMP2084_F19.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Mmmm Donuts!";
 
             return View();
         }
@@ -26,6 +26,12 @@ namespace Video_Game_Store_COMP2084_F19.Controllers
         {
             ViewData["Message"] = "Your contact page.";
 
+            return View();
+        }
+
+        public IActionResult Example (String Genre,String Name)
+        {
+            ViewData["Message"] = "You entered Genre: " + Genre +" Name: "+Name;
             return View();
         }
 
